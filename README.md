@@ -58,18 +58,6 @@ A continuación se puede apreciar una aplicación programada con el pseudocódig
 > Para ejecutar este programa se recomienda **Amazon Corretto 17 SDK**.
 
 
-
-<div style="text-align: center;">
-
-    <p align= center style="display: inline-block; margin: 10px;">
-       
-    </p>
-
-    <p align= center style="display: inline-block; margin: 10px; align: center;">
-
-    </p>
-</div>
-
 ## Agradecimientos
 
 Muchas gracias por investigar sobre esta aplicación, si tienes alguna sugerencia se escuchará atentamente.
