@@ -3,10 +3,10 @@ import java.math.BigInteger
 fun factorial(n: Int): Long {
 
     if (n == 0 || n == 1) {
-        print("1 = ")
+        print(BLUE + "1 = " + RESET)
         return 1
     } else {
-        print("$n x ")
+        print(BLUE + "$n x " + RESET)
         return n.toLong() * factorial(n - 1)
     }
 
@@ -15,10 +15,10 @@ fun factorial(n: Int): Long {
 fun doblefactorial(n: Int): Long {
 
     if (n == 0 || n == 1) {
-        print("1 = ")
+        print(BLUE + "1 = " + RESET)
         return  1
     } else {
-        print("$n x ")
+        print(BLUE + "$n x " + RESET)
         return n.toLong() *  doblefactorial(n - 2)
     }
 
@@ -39,7 +39,7 @@ fun invertir(n: Int): Int {
     return if (n < 10) {
         n
     } else {
-        print(n%10)
+        print(BLUE + n%10 + RESET)
         invertir(n/10)
     }
 
@@ -70,7 +70,6 @@ fun creciente(n: Int): Boolean {
     }
 
 }
-
 
 fun reduccion(n: Int): Int {
 
