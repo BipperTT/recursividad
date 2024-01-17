@@ -12,7 +12,7 @@
     <img src= https://img.shields.io/github/repo-size/BipperTT/recursividad>
     <img src= https://img.shields.io/github/commit-activity/t/BipperTT/recursividad?color=green>
     <img src= https://img.shields.io/github/last-commit/BipperTT/recursividad/main?color=green>
-    <img src= https://img.shields.io/badge/merges-1-darkgreen> 
+    <img src= https://img.shields.io/badge/merges-2-darkgreen> 
 </div>
 
 ## Descripción de la aplicación
