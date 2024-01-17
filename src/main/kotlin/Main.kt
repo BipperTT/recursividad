@@ -27,7 +27,22 @@ fun main() {
 
     println()
 
+    println("¿Es un número creciente?")
+
+    if (creciente(number)){
+        println("Sí")
+    } else {
+        println("No")
+    }
+
+    println()
+
+    println("La reducción a un dígito da el resultado:")
+    println(reduccion(number))
+
+    println()
+
     println("Fibonacci:")
-    println(fibonacci(number))
+    println(fibonacci(number.toBigInteger()))
 
 }

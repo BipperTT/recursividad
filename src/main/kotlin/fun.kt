@@ -1,3 +1,5 @@
+import java.math.BigInteger
+
 fun factorial(n: Int): Long {
 
     if (n == 0 || n == 1) {
@@ -6,7 +8,6 @@ fun factorial(n: Int): Long {
     } else {
         print("$n x ")
         return n.toLong() * factorial(n - 1)
-
     }
 
 }
@@ -16,42 +17,75 @@ fun doblefactorial(n: Int): Long {
     if (n == 0 || n == 1) {
         print("1 = ")
         return  1
-    }else{
+    } else {
         print("$n x ")
         return n.toLong() *  doblefactorial(n - 2)
     }
 
 }
 
-fun qdigits(n:Int):Int{
+fun qdigits(n: Int): Int {
 
-    return if(n/10 == 0){
+    return if(n/10 == 0) {
         1
-    }else{
+    } else {
         1+qdigits((n/10))
     }
 
 }
 
-fun invertir(n:Int): Int {
+fun invertir(n: Int): Int {
 
-    return if (n < 10){
+    return if (n < 10) {
         n
-    }else{
+    } else {
         print(n%10)
         invertir(n/10)
     }
 
 }
 
-fun fibonacci(n: Int): Int{
+fun fibonacci(n: BigInteger): BigInteger {
 
-    return if (n==0){
-        0
-    }else if (n==1){
-        1
-    }else{
-        fibonacci(n-1) + fibonacci(n-2)
+    return if (n <= 1.toBigInteger()) {
+        n
+    } else {
+        fibonacci(n - 1.toBigInteger()) + fibonacci(n - 2.toBigInteger())
+    }
+
+}
+
+fun creciente(n: Int): Boolean {
+
+    val d_actual = n.toString()[0]
+    val num_rest = n.toString()
+    val resto_num = num_rest.substring(1)
+
+    return if (n/10==0) {
+        true
+    } else if (d_actual < resto_num[0]) {
+        creciente(resto_num.toInt())
+    } else {
+        false
+    }
+
+}
+
+
+fun reduccion(n: Int): Int {
+
+    var suma = 0
+    var numero_restante = n
+
+    while (numero_restante != 0) {
+        suma += numero_restante % 10
+        numero_restante /= 10
+    }
+
+    return if (suma/10 == 0) {
+        suma
+    } else {
+        reduccion(suma)
     }
 
 }
