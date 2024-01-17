@@ -33,7 +33,8 @@ A continuación se puede apreciar una aplicación programada con el pseudocódig
 │   ├── .gitignore
 │   ├── gradle.xml
 │   ├── kotlinc.xml
-│   └── misc.xml
+│   ├── misc.xml
+│   └── vcs.xml
 ├── build.gradle
 ├── gradle.properties
 ├── gradle
@@ -46,11 +47,13 @@ A continuación se puede apreciar una aplicación programada con el pseudocódig
 └── src
     └── main
         └── kotlin
-            └── Main.kt
+            ├── Main.kt
+            └── fun.kt
 ```
 ## Resumen del proyecto
 
-- [src/main/kotlin/Main.kt](src/main/kotlin/Main.kt): La función principal del proyecto.
+- [src/main/kotlin/Main.kt](src/main/kotlin/Main.kt): Archivo que contiene la función principal del proyecto.
+- [src/main/kotlin/fun.kt](src/main/kotlin/fun.kt): Archivo que contiene las funciones modulares del proyecto.
 
 ## Ejecución
 
