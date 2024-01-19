@@ -12,7 +12,7 @@
     <img src= https://img.shields.io/github/repo-size/BipperTT/recursividad>
     <img src= https://img.shields.io/github/commit-activity/t/BipperTT/recursividad?color=green>
     <img src= https://img.shields.io/github/last-commit/BipperTT/recursividad/main?color=green>
-    <img src= https://img.shields.io/badge/merges-2-darkgreen> 
+    <img src= https://img.shields.io/badge/merges-3-darkgreen> 
 </div>
 
 ## Descripción de la aplicación
@@ -48,13 +48,17 @@ A continuación se puede apreciar una aplicación programada con el pseudocódig
 └── src
     └── main
         └── kotlin
+            ├── fun.kt
             ├── Main.kt
-            └── fun.kt
+            ├── ConsoleColors.kt
+            └── Utilities.kt
 ```
 ## Resumen del proyecto
 
-- [src/main/kotlin/Main.kt](src/main/kotlin/Main.kt): Archivo que contiene la función principal del proyecto.
 - [src/main/kotlin/fun.kt](src/main/kotlin/fun.kt): Archivo que contiene las funciones modulares del proyecto.
+- [src/main/kotlin/Main.kt](src/main/kotlin/Main.kt): Archivo que contiene la función principal del proyecto.
+- [src/main/kotlin/consoleColors.kt](src/main/kotlin/ConsoleColors.kt): Archivo donde se encuentran constantes para aplicar color a la consola. (Archivo obtenido gracias a raimonizard: https://github.com/raimonizard/kotlin)
+- [src/main/kotlin/utilities.kt](src/main/kotlin/Utilities.kt): Archivo donde hay diversas funciones modulares. (Archivo obtenido gracias a raimonizard: https://github.com/raimonizard/kotlin)
 
 ## Ejecución
 
