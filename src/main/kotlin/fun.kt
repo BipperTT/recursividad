@@ -88,3 +88,38 @@ fun reduccion(n: Int): Int {
     }
 
 }
+
+fun primos_perfectos(n: Int): Boolean {
+
+    var suma = 0
+    var numero_restante = n
+    var es_primo = 0
+
+    while (numero_restante != 0) {
+        suma += numero_restante % 10
+        numero_restante /= 10
+    }
+
+    if (suma / 10 == 0) {
+        suma
+    } else {
+        primos_perfectos(suma)
+    }
+
+    if (suma <= 1) {
+        es_primo ++
+    }
+
+    for (i in 2 until suma) {
+        if (suma % i == 0) {
+            es_primo ++
+        }
+    }
+
+    if (es_primo == 0){
+        return true
+    }else{
+        return false
+    }
+
+}

@@ -7,7 +7,7 @@ fun main() {
 
     val number =  readInt(
         YELLOW_BOLD_BRIGHT + "Para comenzar, ingrese un número entero:" + RESET,
-        YELLOW_BOLD_BRIGHT + "Por favor, ingrese un valor válido de tipo entero." + RESET
+        WHITE_BRIGHT + "Por favor, ingrese un valor válido de tipo entero." + RESET
     )
 
     println()
@@ -17,7 +17,7 @@ fun main() {
 
     println()
 
-    println(BLUE_BOLD_BRIGHT + "El doble factorial de $number es:" + RESET)
+    println(BLUE_BRIGHT + "El doble factorial de $number es:" + RESET)
     println(BLUE + doblefactorial(number))
 
     println()
@@ -43,7 +43,16 @@ fun main() {
     println()
 
     println(BLUE_BOLD_BRIGHT + "La reducción a un dígito da el resultado:" + RESET)
-    println(BLUE + reduccion(number))
+    println(BLUE + reduccion(number) + RESET)
+
+    println()
+
+    println(BLUE_BOLD_BRIGHT +"¿Es un primo perfecto?"+ RESET)
+    if (primos_perfectos(number)){
+        println(GREEN_BRIGHT + "Sí" + RESET)
+    } else {
+        println(RED_BRIGHT + "No" + RESET)
+    }
 
     println()
 
